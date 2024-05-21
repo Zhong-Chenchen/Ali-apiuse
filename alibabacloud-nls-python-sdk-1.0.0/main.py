@@ -5,7 +5,7 @@ import sys
 import nls
 
 URL = "wss://nls-gateway-cn-shanghai.aliyuncs.com/ws/v1"
-TOKEN = "yourToken"  # 参考https://help.aliyun.com/document_detail/450255.html获取token
+TOKEN = "685e53d1cf0542a4ba3e2ccfe21e07db"  # 参考https://help.aliyun.com/document_detail/450255.html获取token
 APPKEY = "k7J6QumD3RPm38CR"  # 获取Appkey请前往控制台：https://nls-portal.console.aliyun.com/applist
 
 TEXT = '大壮正想去摘取花瓣，谁知阿丽和阿强突然内讧，阿丽拿去手枪向树干边的阿强射击，两声枪响，阿强直接倒入水中'
@@ -64,9 +64,9 @@ class TestTts:
 def multiruntest(num=500):
     for i in range(0, num):
         name = "thread" + str(i)
-        t = TestTts(name, "tests/test_tts.pcm")
+        t = TestTts(name, "tests/test_tts1.wav")
         t.start(TEXT)
 
 
 nls.enableTrace(True)
-multiruntest(1)
+multiruntest(2)
