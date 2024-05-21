@@ -55,8 +55,11 @@ class Callback(ResultCallback):
             print('timestamp result:', str(result.get_timestamp()))
 
 callback = Callback()
-SpeechSynthesizer.call(model='sambert-zhichu-v1',
-                       text='我非常爱你',
+# type your str here
+mytext = '富强民主文明和谐'
+SpeechSynthesizer.call(model='sambert-zhide-v1',
+                       text=mytext,
                        sample_rate=48000,
                        format='pcm',
                        callback=callback)
+
