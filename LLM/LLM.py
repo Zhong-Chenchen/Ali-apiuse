@@ -3,6 +3,7 @@ import json
 import os
 
 api_key = 'sk-ede96ec3834f4f1cac053febe2d470e9'
+# api_key = os.getenv("DASHSCOPE_API_KEY")
 url = 'https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation'
 headers = {'Content-Type': 'application/json',
            'Authorization':f'Bearer {api_key}'}
