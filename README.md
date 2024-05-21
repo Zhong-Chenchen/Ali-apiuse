@@ -10,4 +10,8 @@ pip install dashscope pyaudio
 ```commandline
 mytext = '此处替换为你需要的文本'
 ```
+#### 1.4 使用
+```commandline
+python voice_gen_all/voice_gen_play.py
+```
 ### 2、LLM处理
