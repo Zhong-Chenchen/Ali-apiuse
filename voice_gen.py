@@ -19,6 +19,7 @@ import pyaudio
 from dashscope.api_entities.dashscope_response import SpeechSynthesisResponse
 from dashscope.audio.tts import ResultCallback, SpeechSynthesizer, SpeechSynthesisResult
 
+# 此处替换为你的api_key
 dashscope.api_key='sk-ede96ec3834f4f1cac053febe2d470e9'
 
 class Callback(ResultCallback):
